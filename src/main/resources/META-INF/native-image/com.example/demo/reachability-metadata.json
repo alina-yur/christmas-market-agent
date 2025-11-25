@@ -1,0 +1,39 @@
+{
+  "resources": [
+    {
+      "pattern": "christmas-markets.json"
+    }
+  ],
+  "reflection": [
+    {
+      "type": {
+        "proxy": [
+          "com.example.service.XmasMarketAssistant"
+        ]
+      }
+    },
+    {
+      "type": "dev.langchain4j.model.openai.internal.embedding.OpenAiEmbeddingDeserializer",
+      "allDeclaredConstructors": true,
+      "allDeclaredMethods": true
+    },
+    {
+      "type": "dev.langchain4j.model.openai.internal.embedding.OpenAiEmbeddingResponse",
+      "allDeclaredConstructors": true,
+      "allDeclaredMethods": true,
+      "allDeclaredFields": true
+    },
+    {
+      "type": "dev.langchain4j.model.openai.internal.embedding.OpenAiEmbedding",
+      "allDeclaredConstructors": true,
+      "allDeclaredMethods": true,
+      "allDeclaredFields": true
+    },
+    {
+      "type": "dev.langchain4j.model.openai.internal.api.OpenAiUsage",
+      "allDeclaredConstructors": true,
+      "allDeclaredMethods": true,
+      "allDeclaredFields": true
+    }
+  ]
+}
