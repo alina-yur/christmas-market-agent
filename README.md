@@ -1,6 +1,31 @@
 # Christmas Market Booking Agent
 
-A conversational AI assistant for booking Christmas market experiences in Zurich. Built with Micronaut and LangChain4j to show how you can wire up an LLM with tools and let it actually do things.
+A conversational AI assistant for booking Christmas market experiences in Zurich. Built with Micronaut, LangChain4j, and GraalVM.
+
+```shell
+➜  ~ http POST localhost:8080/api/chat message="Book a fondue evening tomorrow for 4 under Alina"
+HTTP/1.1 200 OK
+content-length: 399
+content-type: text/plain
+date: Tue, 25 Nov 2025 14:51:11 GMT
+
+You’re all set for a cozy fondue evening tomorrow 🧀✨
+
+**Booking Confirmation**
+- Name: **Alina**
+- Date: **26 November 2025** (tomorrow)
+- Time: **Evening**
+- Market: **Operahaus Bellevue**
+- Offering: **Fondue**
+- Party size: **4**
+- Total: **CHF 128.00**
+- Reference: **XM-82FB3FDE**
+- Status: ✅ **CONFIRMED**
+
+Would you like to adjust anything (time, market, or number of people)? 🎄
+```
+
+
 
 ## About This Project
 
