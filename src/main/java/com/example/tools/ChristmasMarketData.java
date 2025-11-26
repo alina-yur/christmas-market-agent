@@ -10,5 +10,6 @@ import java.util.Map;
 public record ChristmasMarketData(
                 List<Market> markets,
                 Map<String, Integer> baseCapacity,
-                Map<String, Double> prices) {
+                Map<String, Double> prices,
+                double defaultPrice) {
 }

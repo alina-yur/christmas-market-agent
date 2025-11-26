@@ -4,6 +4,8 @@ import dev.langchain4j.agent.tool.Tool;
 import com.example.model.Market;
 import com.example.model.Reservation;
 import jakarta.inject.Singleton;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.UUID;
 @Singleton
 public class ChristmasMarketTools {
 
+        private static final Logger LOG = LoggerFactory.getLogger(ChristmasMarketTools.class);
         private final ChristmasMarketDataProvider dataProvider;
 
         public ChristmasMarketTools(ChristmasMarketDataProvider dataProvider) {
@@ -21,6 +24,7 @@ public class ChristmasMarketTools {
 
         @Tool("List Christmas markets for a given date (use current date if user doesn't specify). Returns markets with their offerings and available time slots.")
         public List<Market> listMarkets(LocalDate date) {
+                LOG.info("AI requesting markets for date: {}", date != null ? date : "Today");
                 return dataProvider.getData().markets();
         }
 
@@ -30,6 +34,7 @@ public class ChristmasMarketTools {
                         String slot,
                         int partySize,
                         String name) {
+                LOG.info("Attempting reservation: {} @ {} for {} people ({})", offering, slot, partySize, name);
 
                 Map<String, Integer> baseCapacity = dataProvider.getData().baseCapacity();
 
@@ -43,7 +48,7 @@ public class ChristmasMarketTools {
                 }
 
                 Map<String, Double> prices = dataProvider.getData().prices();
-                double perPerson = prices.getOrDefault(offering.toLowerCase(), 20.0);
+                double perPerson = prices.getOrDefault(offering.toLowerCase(), dataProvider.getData().defaultPrice());
 
                 double total = perPerson * partySize;
                 String ref = "XM-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();

@@ -38,5 +38,6 @@
         "raclette": 28.0,
         "gluehwein": 7.0,
         "chocolate": 20.0
-    }
+    },
+    "defaultPrice": 20.0
 }
