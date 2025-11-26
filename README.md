@@ -4,10 +4,8 @@ A conversational AI assistant for booking Christmas market experiences in Zurich
 
 ```shell
 ➜  ~ http POST localhost:8080/api/chat message="Book a fondue evening tomorrow for 4 under Alina"
-HTTP/1.1 200 OK
-content-length: 399
-content-type: text/plain
-date: Tue, 25 Nov 2025 14:51:11 GMT
+
+...
 
 You’re all set for a cozy fondue evening tomorrow 🧀✨
 

@@ -8,7 +8,7 @@
     {
       "type": {
         "proxy": [
-          "com.example.service.XmasMarketAssistant"
+          "com.example.service.ChristmasMarketAssistant"
         ]
       }
     },
