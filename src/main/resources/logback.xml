@@ -8,6 +8,10 @@
         </encoder>
     </appender>
 
+    <logger name="dev.langchain4j" level="DEBUG"/>
+    <logger name="io.micronaut.langchain4j" level="DEBUG"/>
+    <logger name="com.example" level="DEBUG"/>
+
     <root level="info">
         <appender-ref ref="STDOUT" />
     </root>
