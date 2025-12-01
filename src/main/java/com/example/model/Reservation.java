@@ -6,6 +6,7 @@ import io.micronaut.serde.annotation.Serdeable;
 public record Reservation(
                 String reference,
                 String marketId,
+                String marketName,
                 String slot,
                 int partySize,
                 String name,
