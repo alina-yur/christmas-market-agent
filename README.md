@@ -23,11 +23,9 @@ You’re all set for a cozy fondue evening tomorrow 🧀✨
 Would you like to adjust anything (time, market, or number of people)? 🎄
 ```
 
-
-
 ## About This Project
 
-Chat with an AI assistant that searches Christmas markets and makes reservations. No forms, no clicking through menus. You say what you want, the AI calls Java methods to list markets and book slots, then tells you what it did. Conversation context is preserved, so you can adjust your booking without repeating yourself.
+This project offers an AI assistant chat functionality, that searches Christmas markets and makes reservations. The interactions and reservations are made in natural language. You say what you want, the AI calls Java methods to list markets and book slots, then tells you what it did. Conversation context is preserved, so you can adjust your booking without repeating yourself.
 
 ## Core Concepts
 
