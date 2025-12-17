@@ -10,15 +10,15 @@ A conversational AI assistant for booking Christmas market experiences in Zurich
 You’re all set for a cozy fondue evening tomorrow 🧀✨
 
 **Booking Confirmation**
-- Name: **Alina**
-- Date: **26 November 2025** (tomorrow)
-- Time: **Evening**
-- Market: **Operahaus Bellevue**
-- Offering: **Fondue**
-- Party size: **4**
-- Total: **CHF 128.00**
-- Reference: **XM-82FB3FDE**
-- Status: ✅ **CONFIRMED**
+- Name: Alina
+- Date: 26 November 2025 (tomorrow)
+- Time: Evening
+- Market: Operahaus Bellevue
+- Offering: Fondue
+- Party size: 4
+- Total: CHF 128.00
+- Reference: XM-82FB3FDE
+- Status: ✅ CONFIRMED
 
 Would you like to adjust anything (time, market, or number of people)? 🎄
 ```
@@ -78,4 +78,3 @@ The assistant will be available at `http://localhost:8080/api/chat`.
 mvn package -Dpackaging=native-image
 ./target/christmas-market-agent
 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 19ms. Server Running: http://localhost:8080
-```
